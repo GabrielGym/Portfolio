@@ -27,7 +27,7 @@ export const Project = (): JSX.Element => {
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetch(
-        `https://api.github.com/users/${userData.githubUser}/repos?sort=created&direction=desc`
+        `https://api.github.com/users/${userData.githubUser}/repos?sort=created&direction=des`
       );
 
       const json = await data.json();
@@ -56,7 +56,7 @@ export const Project = (): JSX.Element => {
 
             <ProjectStack>
               <Text type="body2" color="grey2">
-                Primary Language:
+                Idioma Principal:
               </Text>
               {repository.language ? (
                 <ProjectStackTech>
@@ -67,30 +67,31 @@ export const Project = (): JSX.Element => {
               ) : (
                 <ProjectStackTech>
                   <Text color="grey2" type="body2">
-                    Primary language not identified
+                    Idioma principal não identificado
                   </Text>
                 </ProjectStackTech>
               )}
             </ProjectStack>
 
             <Text type="body1" color="grey2">
-              {repository.description?.substring(0, 129)}
+              {repository.description?.substring(0, 200)}
             </Text>
             <ProjectLinks>
               <ProjectLink target="_blank" href={repository.html_url}>
-                <FaGithub /> Github Code
+                <FaGithub />Código Github
               </ProjectLink>
               {repository.homepage && (
                 <ProjectLink
                   target="_blank"
                   href={repository.homepage}
                 >
-                  <FaShare /> See demo
+                  <FaShare /> Ver demonstração
                 </ProjectLink>
               )}
             </ProjectLinks>
           </ProjectWrapper>
-        ))}
+        )
+        )}
     </>
   );
 };

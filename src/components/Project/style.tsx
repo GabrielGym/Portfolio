@@ -19,6 +19,10 @@ export const ProjectStackTech = styled("span", {
 
 export const ProjectLinks = styled(Flex, {
   marginTop: "2.25rem",
+  "@mobileLittle": {
+    flexDirection: "column",
+    alignItems: "self-start",
+  },
 });
 
 export const ProjectLink = styled("a", {
@@ -79,3 +83,7 @@ export const Project = styled("article", {
     },
   },
 });
+/* 
+@media (max-width: 480px) {
+    
+} */
