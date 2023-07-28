@@ -9,36 +9,24 @@ import {
   FaNode,
   FaReact,
 } from "react-icons/fa";
-import { SiDjango, SiRedux, SiNestjs } from "react-icons/si";
+import { SiDjango, SiRedux, SiNestjs, SiExpress, SiPrisma,  } from "react-icons/si";
+
 
 export const stackData = [
-  {
-    title: "HTML",
-    img: FaHtml5,
-  },
-  {
-    title: "CSS",
-    img: FaCss3Alt,
-  },
-  {
-    title: "JS",
-    img: FaJs,
-  },
-  { title: "TypeScript", img: SiTypescript },
-  {
-    title: "Node JS",
-    img: FaNode,
-  },
-  {
-    title: "React",
-    img: FaReact,
-  },
-  { title: "Next.js", img: TbBrandNextjs },
-  { title: "Docker", img: FaDocker },
-  { title: "PostgreSQL", img: SiPostgresql },
-  { title: "Git", img: FaGit },
+  { title: "JavaScript", img: FaJs },
   { title: "Python", img: FaPython },
-  { title: "Django", img: SiDjango },
-  { title: "Redux.js", img: SiRedux },
+  { title: "Node JS", img: FaNode },
+  { title: "PostgreSQL", img: SiPostgresql },
+  { title: "Express.js", img: SiExpress },
+  { title: "Next.js", img: TbBrandNextjs },
   { title: "Nest.js", img: SiNestjs },
+  { title: "Prisma", img: SiPrisma },
+  { title: "Django", img: SiDjango },
+  { title: "TypeScript", img: SiTypescript },
+  { title: "React", img: FaReact },
+  { title: "CSS", img: FaCss3Alt },
+  { title: "Redux.js", img: SiRedux },
+  { title: "Docker", img: FaDocker },
+  { title: "HTML", img: FaHtml5 },
+  { title: "Git", img: FaGit },
 ];
