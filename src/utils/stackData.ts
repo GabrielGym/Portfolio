@@ -9,7 +9,7 @@ import {
   FaNode,
   FaReact,
 } from "react-icons/fa";
-import { SiDjango, SiRedux } from "react-icons/si";
+import { SiDjango, SiRedux, SiNestjs } from "react-icons/si";
 
 export const stackData = [
   {
@@ -40,5 +40,5 @@ export const stackData = [
   { title: "Python", img: FaPython },
   { title: "Django", img: SiDjango },
   { title: "Redux.js", img: SiRedux },
-
+  { title: "Nest.js", img: SiNestjs },
 ];
